@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Sans-serif;
+}
+.wrapper{
+    width:1080px;
+    margin:auto;
+}
+.content{
+    float: left;
+    width:80%;
+}
+.side-bar{
+    float: left;
+    width: 20%;
+    height:300px;
+    background-color: #e4e4e4;
+}
+.f-title{
+    margin:10px;
+    color:#52a3ff;
+    font-size: 28px;
+}
+.f-title img{
+    margin-right:5px;
+}
+.form-group{
+    width:90%;
+    margin:10px 0;
+}
+.f-body{
+    overflow: hidden;
+    padding:30px 20px;
+    background-color: #ededed;
+    border-radius: 30px;
+}
+.f-divider{
+    display: block;
+    overflow: hidden;
+    height:50px;
+    line-height: 50px;
+    width:60%;
+    padding-right:40%;
+    text-transform: lowercase;
+    text-align: right;
+}
+.f-control{
+    width:40%;
+    margin-right: 20px;
+    padding: 0 5% 0 5%;
+    float: left;
+}
+.f-control ul li{
+    padding: 13px;
+}
+.f-description{
+    float: left;
+    width:300px;
+    padding:10px 20px;
+    background-color: #d9e5f2;
+    border: 1px solid #d3dce5;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 25px;
+    position: relative;
+}
+.f-description::before, .f-description::after{
+    content: '';
+    position: absolute;
+    top:33px;
+    left:-27px;
+    border: 12px solid transparent;
+    border-right: 15px solid #d3dce5;
+}
+.f-description::after{
+    border-right: 15px solid #d9e5f2;
+    left: -26px;
+}
+.f-control ul{
+    list-style: none;
+}
+.f-control ul li select, input{
+    float: right;
+    width: 65%;
+}
+ul.check-box-list li{
+    padding-top: 5px;
+}
+.check-box-list input{
+    float: left;
+    width: 20px;
+    margin-right: 36px;
+}
+#load{
+    width:90%;
+}
+#submit{
+    float: none;
+    display: block;
+    width:150px;
+    padding:5px;
+    margin:5px auto;
+    font-size: large;
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: bold;
+    background: #3f7ec5;
+    background: linear-gradient(to top, #3f7ec5, #52a3ff);
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    border: 3px solid #fff;
+    border-radius: 30px;
+}
+#loading{
+    display: none;
+    width:100px;
+    margin: auto;
+}
