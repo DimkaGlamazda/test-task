@@ -13,13 +13,15 @@ $answer = [
     3 =>  $data['building'] ? "Дом ". $data['building']: "Дом не задан"
 ];
 
-foreach ($data['travel_type'] as $item){
-    $answer[] =  $travel_style[$item];
+if(!empty($data['travel_type'])){
+    foreach ($data['travel_type'] as $item){
+        $answer[] =  html_entity_decode($travel_style[$item]);
+    }
 }
 
 $text = '';
 foreach ($answer as $par){
-    $text .= "\n".  $par;
+    $text .= "\n". html_entity_decode($par);
 }
 
 sleep(5);
